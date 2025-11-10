@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>{{question.question_text}}</h1>
+        <p>Choice list</p>
+        <ul>
+            {% for choice in choices %}
+            <li>{{ choice.choice_text }}</li>
+            {% endfor %}
+        </ul>
+        <p>Published date: {{question.pub_date}}</p>
+
+    </body>
+</html>
